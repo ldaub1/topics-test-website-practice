@@ -1,0 +1,61 @@
+.app {
+  width: min(880px, 100%);
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.75rem;
+  text-align: center;
+}
+
+.app__header {
+  max-width: 640px;
+}
+
+.app__header h1 {
+  margin: 0;
+  font-size: clamp(2.25rem, 4vw, 3rem);
+  font-weight: 600;
+  color: #1a1d23;
+}
+
+.subhead {
+  margin: 0.75rem 0 0;
+  color: #414141;
+  font-size: 1rem;
+}
+
+.meta {
+  margin: 0.4rem 0 0;
+  color: #6b6b6b;
+  font-size: 0.95rem;
+}
+
+.chart-card {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.25rem;
+  border: 1px solid #e0e0e0;
+}
+
+.status {
+  font-size: 1rem;
+  color: #4a4a4a;
+  margin-top: 2rem;
+}
+
+.status--error {
+  color: #a11c1c;
+}
+
+@media (max-width: 640px) {
+  .app {
+    padding: 2.5rem 1rem 3rem;
+  }
+
+  .chart-card {
+    padding: 1rem 0.75rem;
+  }
+}
